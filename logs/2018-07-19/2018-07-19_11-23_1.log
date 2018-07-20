@@ -1,0 +1,13 @@
+2018-07-19 10:19:44 [main] INFO  edu.epam.arraytask.runner.Main - 67
+2018-07-19 10:19:44 [main] INFO  edu.epam.arraytask.runner.Main - 79
+2018-07-19 10:19:44 [main] INFO  edu.epam.arraytask.runner.Main - 10:19:44.181
+2018-07-19 10:52:57 [main] ERROR edu.epam.arraytask.runner.Main - input.txt (Не удается найти указанный файл)
+2018-07-19 10:53:31 [main] ERROR edu.epam.arraytask.runner.Main - tasks\input\input.txt (Системе не удается найти указанный путь)
+2018-07-19 10:56:54 [main] INFO  edu.epam.arraytask.runner.Main - 14
+2018-07-19 10:56:54 [main] INFO  edu.epam.arraytask.runner.Main - 67
+2018-07-19 10:56:54 [main] INFO  edu.epam.arraytask.runner.Main - 34
+2018-07-19 10:56:54 [main] INFO  edu.epam.arraytask.runner.Main - 56
+2018-07-19 10:56:54 [main] INFO  edu.epam.arraytask.runner.Main - 67
+2018-07-19 10:56:54 [main] INFO  edu.epam.arraytask.runner.Main - 79
+2018-07-19 10:56:54 [main] INFO  edu.epam.arraytask.runner.Main - 10:56:54.230
+2018-07-19 11:23:37 [main] INFO  edu.epam.arraytask.runner.Main - 14

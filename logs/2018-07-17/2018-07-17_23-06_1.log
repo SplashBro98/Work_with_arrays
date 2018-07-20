@@ -1,0 +1,15 @@
+2018-07-17 22:47:48 [main] INFO  edu.epam.runner.runner.Main - 12
+2018-07-17 22:47:48 [main] INFO  edu.epam.runner.runner.Main - 34
+2018-07-17 22:47:48 [main] INFO  edu.epam.runner.runner.Main - 67
+2018-07-17 22:47:48 [main] INFO  edu.epam.runner.runner.Main - 35
+2018-07-17 22:47:48 [main] INFO  edu.epam.runner.runner.Main - 76
+2018-07-17 23:03:55 [main] ERROR edu.epam.runner.runner.Main - input.txt (Не удается найти указанный файл)
+2018-07-17 23:06:10 [main] INFO  edu.epam.runner.runner.Main - 14
+2018-07-17 23:06:10 [main] INFO  edu.epam.runner.runner.Main - 67
+2018-07-17 23:06:10 [main] INFO  edu.epam.runner.runner.Main - 12
+2018-07-17 23:06:10 [main] INFO  edu.epam.runner.runner.Main - 34
+2018-07-17 23:06:10 [main] INFO  edu.epam.runner.runner.Main - 56
+2018-07-17 23:06:10 [main] INFO  edu.epam.runner.runner.Main - 67
+2018-07-17 23:06:49 [main] INFO  edu.epam.runner.runner.Main - 14
+2018-07-17 23:06:49 [main] INFO  edu.epam.runner.runner.Main - 67
+2018-07-17 23:06:49 [main] INFO  edu.epam.runner.runner.Main - 34

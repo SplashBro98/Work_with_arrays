@@ -1,0 +1,14 @@
+2018-07-19 11:23:37 [main] INFO  edu.epam.arraytask.runner.Main - 67
+2018-07-19 11:23:37 [main] INFO  edu.epam.arraytask.runner.Main - 34
+2018-07-19 11:23:37 [main] INFO  edu.epam.arraytask.runner.Main - 56
+2018-07-19 11:23:37 [main] INFO  edu.epam.arraytask.runner.Main - 67
+2018-07-19 11:23:37 [main] INFO  edu.epam.arraytask.runner.Main - 79
+2018-07-19 11:23:37 [main] INFO  edu.epam.arraytask.runner.Main - [14, 67, 34, 56, 67, 79]
+2018-07-19 11:23:38 [main] INFO  edu.epam.arraytask.runner.Main - 11:23:38.044
+2018-07-19 11:30:46 [main] INFO  edu.epam.arraytask.runner.Main - 14
+2018-07-19 11:30:46 [main] INFO  edu.epam.arraytask.runner.Main - 67
+2018-07-19 11:30:46 [main] INFO  edu.epam.arraytask.runner.Main - 34
+2018-07-19 11:30:46 [main] INFO  edu.epam.arraytask.runner.Main - 56
+2018-07-19 11:30:46 [main] INFO  edu.epam.arraytask.runner.Main - 82
+2018-07-19 11:30:46 [main] INFO  edu.epam.arraytask.runner.Main - 79
+2018-07-19 11:30:46 [main] INFO  edu.epam.arraytask.runner.Main - [14, 67, 34, 56, 82, 79]
