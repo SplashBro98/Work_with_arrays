@@ -30,7 +30,7 @@ public class Main {
 
 
 //            ReaderFromFile reader = new ReaderFromFile("input/input.txt");
-//            ArrayList<String> arrayToCheck = reader.createStringList();
+//            ArrayList<String> arrayToCheck = reader.createStringArray();
 //            Validator fileChecker = new Validator();
 //            Transformer transformer1 = new Transformer(fileChecker.checkStrings(arrayToCheck));
 //            Performer performer = new Performer(transformer1.createArray());
@@ -41,9 +41,12 @@ public class Main {
             performer.sort();
             logger.info(Arrays.toString(numbers));
             logger.log(Level.INFO, LocalTime.now());
-
-        } catch (IOException io) {
-            logger.log(Level.ERROR, io.getMessage());
+        }
+//         catch (IOException io) {
+//            logger.log(Level.ERROR, io.getMessage());
+//        }
+        catch (Exception e){
+            logger.log(Level.ERROR,e.getMessage());
         }
 
 

@@ -2,30 +2,34 @@ package edu.epam.arraytask.util.reader;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ReaderFromFile {
     private Scanner scanner;
-    ArrayList<String> arrayList;
+    private String[] strings;
 
     public ReaderFromFile(String filePath) throws IOException {
         FileReader fileReader = new FileReader(filePath);
         this.scanner = new Scanner(fileReader);
-        this.arrayList = new ArrayList<>();
-
     }
 
     public Scanner getScanner() {
         return scanner;
     }
-    public ArrayList<String> getArrayList() {
-        return arrayList;
+
+    public String[] getStrings() {
+        return strings;
     }
-    public ArrayList<String> createStringList(){
-        while(this.scanner.hasNextLine()){
-            this.arrayList.add(this.scanner.nextLine());
+
+    public String[] createStringArray() {
+        int counter = 0;
+        this.strings = new String[counter];
+        while (this.scanner.hasNextLine()) {
+            String buffer = this.scanner.nextLine();
+            this.strings = Arrays.copyOf(this.strings,++counter);
+            this.strings[counter - 1] = buffer;
         }
-        return this.arrayList;
+        return this.strings;
     }
 }

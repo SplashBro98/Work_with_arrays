@@ -1,18 +1,18 @@
 package edu.epam.arraytask.util.transformer;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Transformer {
-    private ArrayList<String> arrayList;
+    private String[] stringArray;
 
-    public Transformer(ArrayList<String> arrayList) {
-        this.arrayList = arrayList;
+    public Transformer(String[] stringArray) {
+        this.stringArray = stringArray;
     }
+
     public int[] createArray(){
-        int[] result = new int[this.arrayList.size()];
-        for (int i = 0; i < arrayList.size(); i++) {
-            result[i] = Integer.parseInt(arrayList.get(i));
+        int[] result = new int[this.stringArray.length];
+        for (int i = 0; i < stringArray.length; i++) {
+            result[i] = Integer.parseInt(stringArray[i]);
         }
         return result;
     }

@@ -24,7 +24,7 @@ public class Validator {
                }
            }
         }
-        return result;
+        return (String[]) result.toArray();
     }
 
 }
