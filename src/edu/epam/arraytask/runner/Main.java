@@ -1,16 +1,17 @@
 package edu.epam.arraytask.runner;
 
 import edu.epam.arraytask.performer.Performer;
-import edu.epam.arraytask.util.reader.ReaderFromConsole;
-import edu.epam.arraytask.util.validator.Validator;
-import edu.epam.arraytask.util.transformer.Transformer;
+import edu.epam.arraytask.reader.ReaderFromConsole;
+import edu.epam.arraytask.reader.ReaderFromFile;
+import edu.epam.arraytask.validator.Validator;
+import edu.epam.arraytask.transformer.Transformer;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.IOException;
 import java.time.LocalTime;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
@@ -19,27 +20,31 @@ public class Main {
     public static void main(String[] args) {
         try {
 
-            ReaderFromConsole.readInfo();
-            Validator checker = new Validator();
-            Transformer transformer = new Transformer(checker.checkStrings(ReaderFromConsole.getArrayOfStrings()));
-            Performer performer = new Performer(transformer.createArray());
-            int[] numbers = performer.findSingleDigits();
-            for (int i = 0; i < numbers.length; i++) {
-                logger.log(Level.INFO, numbers[i]);
-            }
+            Scanner scanner = new Scanner(System.in);
+            ReaderFromConsole reader = new ReaderFromConsole();
+            ReaderFromFile readerFromFile = new ReaderFromFile();
+            Validator validator = new Validator();
+            Transformer transformer = new Transformer();
+            Performer performer = new Performer();
 
 
-//            ReaderFromFile reader = new ReaderFromFile("input/input.txt");
-//            ArrayList<String> arrayToCheck = reader.createStringArray();
-//            Validator fileChecker = new Validator();
-//            Transformer transformer1 = new Transformer(fileChecker.checkStrings(arrayToCheck));
-//            Performer performer = new Performer(transformer1.createArray());
-//            int[] digitsAlone = performer.findSingleDigits();
-//            for (int i = 0; i < digitsAlone.length; i++) {
-//                logger.log(Level.INFO, digitsAlone[i]);
-//            }
-            performer.sort();
-            logger.info(Arrays.toString(numbers));
+//            String[] array = reader.readInfo(scanner);
+//            array = validator.checkStrings(array);
+//            int[] numbers = transformer.createIntArray(array);
+//            int[] singleDigits = performer.findSingleDigits(numbers);
+//            logger.info(Arrays.toString(singleDigits));
+//            singleDigits = performer.sort(singleDigits);
+//            logger.info(Arrays.toString(singleDigits));
+//            logger.log(Level.INFO, LocalTime.now());
+
+
+            String[] readedArray = readerFromFile.readInfo("input/input.txt");
+            readedArray = validator.checkStrings(readedArray);
+            int[] digitsAlone = transformer.createIntArray(readedArray);
+            int[] result = performer.findSingleDigits(digitsAlone);
+            logger.info(Arrays.toString(result));
+            result = performer.sort(result);
+            logger.info(Arrays.toString(result));
             logger.log(Level.INFO, LocalTime.now());
         }
 //         catch (IOException io) {
